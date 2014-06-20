@@ -1,7 +1,7 @@
 % News
 % John Gabriele
 
-2014-06-17
+v0.1.0, 2014-06-20
 
   * New release:
 

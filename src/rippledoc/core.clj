@@ -24,7 +24,7 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with Rippledoc.  If not, see <http://www.gnu.org/licenses/>."
 
-(def version "2014-06-16")
+(def version "0.1.0")
 
 (def proj-title     (atom ""))
 (def copyright-info (atom ""))

@@ -22,6 +22,8 @@ Download and Install
 ====================
 
 To install Rippledoc, just download and save the latest [Rippledoc jar
-file](#) and [rippledoc.sh](#) to somewhere in your $PATH (such as
-`~/bin` or `/usr/local/bin`) and make sure rippledoc.sh is executable
-(`chmod +x rippledoc.sh`).
+file](http://www.unexpected-vortices.com/sw/rippledoc/rippledoc-0.1.0-standalone.jar)
+and
+[rippledoc.sh](https://raw.githubusercontent.com/uvtc/rippledoc/master/bin/rippledoc.sh)
+to somewhere in your $PATH (such as `~/bin` or `/usr/local/bin`) and
+make sure rippledoc.sh is executable (`chmod +x rippledoc.sh`).
