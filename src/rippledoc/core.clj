@@ -83,7 +83,7 @@
 
 <div id=\"my-footer\">
 {{copyright-info}}<br/>
-<a href=\"{{link-to-this-page-md}}\">Pandoc-Markdown source for this chapter</a><br/>
+<a href=\"{{link-to-this-page-md}}\">Pandoc-Markdown source for this page</a><br/>
 (Docs processed by
 <a href=\"http://www.unexpected-vortices.com/sw/rippledoc/index.html\">Rippledoc</a>.)
 </div> <!-- my-footer -->
