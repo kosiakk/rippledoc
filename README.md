@@ -1,7 +1,7 @@
 Rippledoc
 =========
 
-*An particularly easy-to-use doc processing tool.*
+*A particularly easy-to-use doc processing tool.*
 
 Find the Rippledoc docs rendered in lovely html at
 <http://www.unexpected-vortices.com/sw/rippledoc/index.html>.
