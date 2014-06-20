@@ -8,3 +8,4 @@
  #. `lein uberjar` and cp the jar to u-v/sw/rippledoc
  #. `cd doc`, `rippledoc.sh` and cp -r docs to u-v/sw/rippledoc
  #. `git push`
+ #. rsync docs to u-v
