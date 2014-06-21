@@ -6,6 +6,8 @@
 
   * Title in browser window & bookmark should include project name
 
+  * index.md is special and should not be processed with --toc and -N
+
   * Add options:
 
         --help
