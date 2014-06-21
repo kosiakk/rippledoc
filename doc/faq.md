@@ -57,6 +57,18 @@ Because Pandoc:
   * is easy to install on GNU/Linux
 
 
+**"Bah, I use github; why not just let users read the docs there, since
+github automatically renders .md files as html?"**
+
+Mainly because:
+
+  * Pandoc supports a number of very useful extensions which github's
+    markdown processor does not (see previous FAQ item).
+  * Rippledoc provides excellent navigation links, and lets you order
+    your docs as well.
+  * With Rippledoc you can customize styling.
+
+
 **"Why does Rippledoc process all md files every time I run it?"**
 
 Because the links in the nav pane and the toc's contain document

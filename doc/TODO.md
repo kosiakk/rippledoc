@@ -1,6 +1,11 @@
 % TODO
 % John Gabriele
 
+  * check to make sure there's at least one doc file present other
+    than index.md.
+
+  * Title in browser window & bookmark should include project name
+
   * Add options:
 
         --help
