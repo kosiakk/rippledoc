@@ -14,6 +14,8 @@
         --clean   # remove all generated .html, toc.conf, toc.md, and styles files
         --readme-is-index {title}   # for when index.md file is not present, but ../README.md is.
 
+  * also create one big all-one-page.{md,html} (?)
+
   * printable version shows author name...
 
   * img's should probably be centered on the page
