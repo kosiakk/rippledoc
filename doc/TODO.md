@@ -11,14 +11,17 @@
   * Add options:
 
         --help
-        --clean   # remove all generated .html, toc.conf, toc.md, and styles files
-        --readme-is-index {title}   # for when index.md file is not present, but ../README.md is.
+        --clean      # remove all generated .html, toc.conf, toc.md, and styles files
+        --modified   # shows which md files have been modified and need processing
+        --readme-is-index {title}   # for when index.md file is not present,
+                                    # but ../README.md is.
 
-  * also create one big all-one-page.{md,html} (?)
+  * If you pass one arg --- an md filename --- just process that one file
+    and exit.
+
+  * maybe also create one big all-one-page.{md,html} (?)
 
   * printable version shows author name...
-
-  * img's should probably be centered on the page
 
   * do more testing, ex.:
 
