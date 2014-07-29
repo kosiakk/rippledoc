@@ -1,6 +1,7 @@
 body {
     color: #222;
     line-height: 140%;
+    font-size: small;
     font-family: sans-serif;
     background-color: #fff;
 }
@@ -28,8 +29,8 @@ body {
     background-color: #eee;
 }
 
-#nav-pane, #header-nav-bar, #footer-nav-bar {
-    font-size: small;
+#nav-pane, #header-nav-bar, #footer-nav-bar, #my-footer {
+    font-size: x-small;
 }
 
 /* The box on the left with links to docs and dirs in this dir. */
@@ -144,7 +145,6 @@ blockquote code, blockquote pre {
     clear: both;
     padding: 10px;
     font-style: italic;
-    font-size: small;
     border-top: 1px solid #ddd;
 }
 
