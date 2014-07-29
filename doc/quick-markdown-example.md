@@ -31,6 +31,7 @@ content starts at 4-columns in.
 
 Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
 in chapters 12--14"). Three dots ... will be converted to an ellipsis.
+Unicode is supported. ☺
 
 
 
@@ -98,9 +99,11 @@ Now a nested list:
     Do not bump wooden spoon or it will fall.
 
 Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above). Here's a link to [a
-website](http://foo.bar). Here's a link to a [local
-doc](local-doc.html). Here's a footnote [^1].
+that last line which continues item 3 above).
+
+Here's a link to [a website](http://foo.bar), to a [local
+doc](local-doc.html), and to a [section heading in the current
+doc](#an-h2-header). Here's a footnote [^1].
 
 [^1]: Footnote text goes here.
 
@@ -142,9 +145,8 @@ oranges
 tomatoes
   : There's no "e" in tomatoe.
 
-Again, text is indented 4 spaces. (Alternately, put blank lines in
-between each of the above definition list lines to spread things
-out more.)
+Again, text is indented 4 spaces. (Put a blank line between each
+term/definition pair to spread things out more.)
 
 Here's a "line block":
 
@@ -163,15 +165,11 @@ $$I = \int \rho R^{2} dV$$
 
 And note that you can backslash-escape any punctuation characters
 which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
-
-Done.
 ~~~~~~
-
-***
 
 And here's that text rendered as html:
 
-***
+<div style="border: 2px dashed seagreen; padding: 10px;">
 
 An h1 header
 ============
@@ -196,6 +194,7 @@ content starts at 4-columns in.
 
 Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
 in chapters 12--14"). Three dots ... will be converted to an ellipsis.
+Unicode is supported. ☺
 
 
 
@@ -263,9 +262,11 @@ Now a nested list:
     Do not bump wooden spoon or it will fall.
 
 Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above). Here's a link to [a
-website](http://foo.bar). Here's a link to a [local
-doc](local-doc.html). Here's a footnote [^1].
+that last line which continues item 3 above).
+
+Here's a link to [a website](http://foo.bar), to a [local
+doc](local-doc.html), and to a [section heading in the current
+doc](#an-h2-header). Here's a footnote [^1].
 
 [^1]: Footnote text goes here.
 
@@ -307,9 +308,8 @@ oranges
 tomatoes
   : There's no "e" in tomatoe.
 
-Again, text is indented 4 spaces. (Alternately, put blank lines in
-between each of the above definition list lines to spread things
-out more.)
+Again, text is indented 4 spaces. (Put a blank line between each
+term/definition pair to spread things out more.)
 
 Here's a "line block":
 
@@ -329,9 +329,7 @@ $$I = \int \rho R^{2} dV$$
 And note that you can backslash-escape any punctuation characters
 which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
 
-Done.
-
-***
+</div>
 
 Pandoc also allows you to do a few more things besides.  You can read
 more about that in the [Pandoc
