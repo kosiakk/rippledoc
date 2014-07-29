@@ -1,7 +1,7 @@
-(defproject rippledoc "0.1.0"
+(defproject rippledoc "0.1.1"
   :description "A particularly easy-to-use doc processing tool."
   :url "https://github.com/uvtc/rippledoc"
-  :license {:name "GNU General Public License v3"
+  :license {:name "GNU General Public License v3 or (at your option) later"
             :url "https://www.gnu.org/licenses/gpl.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [me.raynes/fs        "1.4.6"]

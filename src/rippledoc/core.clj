@@ -24,7 +24,7 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with Rippledoc.  If not, see <http://www.gnu.org/licenses/>."
 
-(def version "0.1.0")
+(def version "0.1.1")
 
 (def proj-title     (atom ""))
 (def copyright-info (atom ""))
@@ -365,13 +365,35 @@ or below."
                             files-dirs-here)]
     (when-not (= files-dirs-in-toc
                  files-dirs-here)
-      (println "[**] toc.conf in" path "doesn't agree with what's actually there.")
-      (print "[**] In toc.conf:\n  ")
-      (prn files-dirs-in-toc)
-      (print "[**] Actually there:\n  ")
-      (prn files-dirs-here)
-      (println "[**] Exiting.")
-      (System/exit 0))))
+      (let [set-in-toc    (set files-dirs-in-toc)
+            set-here      (set files-dirs-here)
+            toc-conf-path (str path "/toc.conf")]
+        (cond
+         (set/subset? set-in-toc set-here)
+         (do (println "[**]" toc-conf-path "lacks mention of:")
+             (doseq [x (set/difference set-here set-in-toc)]
+               (println "[**]    " x))
+             (println "[**] Please update (or delete) that conf file, or otherwise remedy")
+             (println "[**] the situation. Exiting.")
+             (System/exit 0))
+         (set/subset? set-here set-in-toc)
+         (do (println "[**]" toc-conf-path "unduly lists:")
+             (doseq [x (set/difference set-in-toc set-here)]
+               (println "[**]    " x))
+             (println "[**] Please update (or delete) that conf file, or otherwise remedy")
+             (println "[**] the situation. Exiting.")
+             (System/exit 0))
+         :else
+         (do (println "[**] Hm." toc-conf-path "doesn't agree with what's in" (str path "."))
+             (println "[**] Listed in that toc:")
+             (doseq [x files-dirs-in-toc]
+               (println "[**]    " x))
+             (println "[**] Actually there:")
+             (doseq [x files-dirs-here]
+               (println "[**]    " x))
+             (println "[**] Please update (or delete) that conf file, or otherwise remedy")
+             (println "[**] the situation. Exiting.")
+             (System/exit 0)))))))
 
 
 (declare create-toc-md-ds-for)
