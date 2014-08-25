@@ -1,7 +1,7 @@
 % News
 % John Gabriele
 
-# v0.1.1, 2014-xx-xx
+# v0.1.1, 2014-07-29
 
   * Better error reporting when a toc.conf doesn't agree
     with what files are actually there (closes issue #2).
