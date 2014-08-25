@@ -44,7 +44,7 @@ You can find the source located at
 OS Compatibility
 ================
 
-The author has not even given a passing thought to running this
+The author has not given even a passing thought to running this
 program on any OS other than GNU/Linux.
 
 

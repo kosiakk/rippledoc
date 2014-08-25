@@ -6,7 +6,7 @@ Rippledoc
 Find the Rippledoc docs rendered in lovely html at
 <http://www.unexpected-vortices.com/sw/rippledoc/index.html>.
 
-**Please note that the author has not even given a passing thought to
+**Please note that the author has not given even a passing thought to
 running this program on any OS other than GNU/Linux.**
 
 
